@@ -6,17 +6,16 @@ using Microsoft.Practices.Unity;
 
 namespace MyXamarinApp
 {
-	public class MainViewModel
+	public class SecondViewModel
 	{
 		public string Id { get; private set;}
-
 
 		public ICommand Click { get; set; }
 
 		private IUnityContainer _unityContainer;
 		private INavigation _navigation;
 
-		public MainViewModel (
+		public SecondViewModel (
 			IUnityContainer unityContainer,
 			INavigation navigation)
 		{
@@ -25,13 +24,13 @@ namespace MyXamarinApp
 			_unityContainer = unityContainer;
 			_navigation = navigation;
 
-			Click = new Command (GoToSecondView);
+			Click = new Command (BackToMainPage);
 		}
 
-		private async void GoToSecondView()
+		private async void BackToMainPage()
 		{
-			var secondView = _unityContainer.Resolve<SecondView> ();
-			await _navigation.PushAsync (secondView);
+			var mainView = _unityContainer.Resolve<MainView> ();
+			await _navigation.PushAsync (mainView);
 		}
 	}
 }

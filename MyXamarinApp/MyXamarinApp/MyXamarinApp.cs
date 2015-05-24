@@ -8,18 +8,18 @@ namespace MyXamarinApp
 	{
 		public App ()
 		{
+			var mainPage = new NavigationPage ();
+
 			var container = new UnityContainer ();
 
 			container.RegisterInstance<IUnityContainer> (container);
+			container.RegisterInstance<INavigation> (mainPage.Navigation);
 
-			MainPage = GetMainPageWithIoC (container);
-		}
+			MainPage = mainPage;
 
-		private ContentPage GetMainPageWithoutIoC()
-		{
-			var viewModel = new MainViewModel ();
-			var view = new MainView (viewModel);
-			return view;
+			var mainView = GetMainPageWithIoC (container);
+
+			MainPage.Navigation.PushAsync (mainView);
 		}
 
 		private ContentPage GetMainPageWithIoC(IUnityContainer container)

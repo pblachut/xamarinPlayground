@@ -4,6 +4,7 @@
 		<StackLayout>
 			<Label Text="To jest id widoku"/>
 			<Label Text="{Binding Id}" VerticalOptions="Center" HorizontalOptions="Center" />
+			<Button Text="Idź do drugiego" Command="{Binding Click}" BackgroundColor="Aqua"/>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
