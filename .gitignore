@@ -9,3 +9,9 @@ XamarinTest/packages/
 MyXamarinApp/packages/
 ViewModelTest/packages/
 XamarinTest/Droid/bin/Debug/
+MyXamarinApp/Droid/bin/
+MyXamarinApp/UITests/bin/Debug
+MyXamarinApp/UITests/obj/Debug/
+ViewModelTest/UITests/obj/Debug/
+ViewModelTest/UITests/obj/Debug
+ViewModelTest/UITests/obj

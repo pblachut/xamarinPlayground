@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Microsoft.Practices.Unity;
 using Xamarin.Forms;
 
 namespace MyXamarinApp
@@ -8,18 +8,18 @@ namespace MyXamarinApp
 	{
 		public App ()
 		{
-			// The root page of your application
-			MainPage = new ContentPage {
-				Content = new StackLayout {
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
+			var container = new UnityContainer ();
+
+			container.RegisterInstance<IUnityContainer> (container);
+
+			MainPage = GetMainPageWithoutIoC ();
+		}
+
+		private ContentPage GetMainPageWithoutIoC()
+		{
+			var viewModel = new MainViewModel ();
+			var view = new MainView (viewModel);
+			return view;
 		}
 
 		protected override void OnStart ()

@@ -20,12 +20,6 @@ namespace MyXamarinApp.Droid
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
 
-			var container = new UnityContainer ();
-
-			container.RegisterInstance<IUnityContainer> (container);
-
-			Activator.
-
 			LoadApplication (new App ());
 		}
 	}
