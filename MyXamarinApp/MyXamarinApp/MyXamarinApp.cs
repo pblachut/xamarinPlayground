@@ -12,7 +12,7 @@ namespace MyXamarinApp
 
 			container.RegisterInstance<IUnityContainer> (container);
 
-			MainPage = GetMainPageWithoutIoC ();
+			MainPage = GetMainPageWithIoC (container);
 		}
 
 		private ContentPage GetMainPageWithoutIoC()
@@ -20,6 +20,21 @@ namespace MyXamarinApp
 			var viewModel = new MainViewModel ();
 			var view = new MainView (viewModel);
 			return view;
+		}
+
+		private ContentPage GetMainPageWithIoC(IUnityContainer container)
+		{
+			return container.Resolve<MainView> ();
+		}
+
+		private void RegisterViewModels(IUnityContainer container)
+		{
+			container.RegisterType<MainViewModel, MainViewModel> (new ContainerControlledLifetimeManager ());
+		}
+
+		private void RegisterViews(IUnityContainer container)
+		{
+			container.RegisterType<MainView, MainView> (new ContainerControlledLifetimeManager ());
 		}
 
 		protected override void OnStart ()
