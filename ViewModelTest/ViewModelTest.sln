@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ViewModelTest", "ViewModelTest\ViewModelTest.shproj", "{019484CB-D501-44C3-89E4-5D0876F6F46E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModelTest.Droid", "Droid\ViewModelTest.Droid.csproj", "{4F813055-2622-4F08-8F9A-D4BF3CAE6496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModelTest.UITests", "UITests\ViewModelTest.UITests.csproj", "{FF6083C7-DE73-46BF-AB71-4707D25A9C47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F813055-2622-4F08-8F9A-D4BF3CAE6496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F813055-2622-4F08-8F9A-D4BF3CAE6496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F813055-2622-4F08-8F9A-D4BF3CAE6496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F813055-2622-4F08-8F9A-D4BF3CAE6496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF6083C7-DE73-46BF-AB71-4707D25A9C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6083C7-DE73-46BF-AB71-4707D25A9C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6083C7-DE73-46BF-AB71-4707D25A9C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6083C7-DE73-46BF-AB71-4707D25A9C47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

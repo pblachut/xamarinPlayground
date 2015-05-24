@@ -1,0 +1,9 @@
+C:\Users\Piotr\Documents\!Repozytoria\cordovatest\ViewModelTest\UITests\bin\Debug\ViewModelTest.UITests.dll
+C:\Users\Piotr\Documents\!Repozytoria\cordovatest\ViewModelTest\UITests\bin\Debug\ViewModelTest.UITests.pdb
+C:\Users\Piotr\Documents\!Repozytoria\cordovatest\ViewModelTest\UITests\bin\Debug\nunit.framework.dll
+C:\Users\Piotr\Documents\!Repozytoria\cordovatest\ViewModelTest\UITests\bin\Debug\Xamarin.UITest.dll
+C:\Users\Piotr\Documents\!Repozytoria\cordovatest\ViewModelTest\UITests\bin\Debug\nunit.framework.xml
+C:\Users\Piotr\Documents\!Repozytoria\cordovatest\ViewModelTest\UITests\bin\Debug\Xamarin.UITest.xml
+C:\Users\Piotr\Documents\!Repozytoria\cordovatest\ViewModelTest\UITests\obj\Debug\ViewModelTest.UITests.csprojResolveAssemblyReference.cache
+C:\Users\Piotr\Documents\!Repozytoria\cordovatest\ViewModelTest\UITests\obj\Debug\ViewModelTest.UITests.dll
+C:\Users\Piotr\Documents\!Repozytoria\cordovatest\ViewModelTest\UITests\obj\Debug\ViewModelTest.UITests.pdb
